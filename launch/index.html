@@ -58,14 +58,12 @@
 							<div class="simply-countdown simply-countdown-one"></div>
 							<div class="row">
 								<h2><a href="http://gospely.com/?detail=true" target="_blank">详细了解</a></h2>
-								<form class="form-inline" id="fh5co-header-subscribe">
-									<div class="col-md-12 col-md-offset-0">
-										<div class="form-group">
-											<input type="text" class="form-control" id="email" placeholder="上线的时候通过邮件通知我">
-											<button id="notify-me" class="btn btn-primary">发送</button>
-										</div>
+								<div class="col-md-12 col-md-offset-0">
+									<div class="form-group">
+										<input type="text" class="form-control" id="email" placeholder="上线的时候通过邮件通知我">
+										<button id="notify-me" class="btn btn-primary">发送</button>
 									</div>
-								</form>
+								</div>
 								<ul class="fh5co-social-icons">
 <!-- 									<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 									<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -142,6 +140,31 @@
     });
 
     // emails
+
+    var alert = function(msg, type) {
+		window.noty = window.noty || [];
+
+		var current = window.noty.length - 1;
+
+    	type = type || 'success';
+		var timestamp = Date.parse(new Date());
+		var body = document.body;
+		var div = document.createElement("div");
+		div.className = "notification noty animated bounceIn is-" + type;
+		div.id = 'noty-' + timestamp;
+		div.innerHTML = "<button onclick='javascript:var noty=document.getElementById(\"noty-" + timestamp + "\");noty.className=\"notification noty animated bounceOut is-" + type + " \";window.noty.splice(" + current + ", 1);setTimeout(function() {noty.parentNode.removeChild(noty)}, 2000)' class='delete'></button>" + msg;
+		window.noty.push(div);
+		body.appendChild(div);
+
+		setTimeout(function() {
+			div.className = "notification noty animated bounceOut is-" + type;
+			window.noty.splice(current, 1);
+			setTimeout(function() {
+				div.parentNode.removeChild(div);
+			}, 2000)
+		}, 2000);
+    },
+
 
     $('#notify-me').click(function() {
 
