@@ -143,7 +143,7 @@
 
     // emails
 
-    var alert = function(msg, type) {
+    var _alert = function(msg, type) {
 		window.noty = window.noty || [];
 
 		var current = window.noty.length - 1;
@@ -177,13 +177,16 @@
 	            	email: email
 	            },
 	            function(data){
-	                // if(data != 1){
-	                //         alert("报错");
-	                // }else{
-	                //         // form.unbind('submit');
-	                //         // form.submit();
-	                //         return true;
-	                // }
+
+	            	var code = data.code
+
+	                if(code == -1){
+	                	_alert(data.message);
+	                }else{
+                        // form.unbind('submit');
+                        // form.submit();
+                        return true;
+	                }
 
 	                console.log(data);
 	                return false;
