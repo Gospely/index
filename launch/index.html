@@ -191,8 +191,19 @@
 
 	$(function(){
 
+		function isEmail(str){
+			var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+			return reg.test(str);
+		}
+
 	    $("form[type=ajax]").submit(function(){
 	    	var email = $('#email').val();
+
+	    	if(!isEmail(email)) {
+	    		_alert('请输入正确的邮箱！');
+	    		return false;
+	    	}
+
 	        $.post(
 	            'http://api.gospely.com/emails',
 	            {
