@@ -58,12 +58,14 @@
 							<div class="simply-countdown simply-countdown-one"></div>
 							<div class="row">
 								<h2><a href="http://gospely.com/?detail=true" target="_blank">详细了解</a></h2>
-								<div class="col-md-12 col-md-offset-0">
-									<div class="form-group">
-										<input type="text" class="form-control" id="email" placeholder="上线的时候通过邮件通知我">
-										<button id="notify-me" class="btn btn-primary">发送</button>
+								<form type="ajax" class="form-inline" id="fh5co-header-subscribe">
+									<div class="col-md-12 col-md-offset-0">
+										<div class="form-group">
+											<input type="text" class="form-control" id="email" placeholder="上线的时候通过邮件通知我">
+											<button id="notify-me" type="submit" class="btn btn-primary">发送</button>
+										</div>
 									</div>
-								</div>
+								</form>
 								<ul class="fh5co-social-icons">
 <!-- 									<li><a href="#"><i class="icon-twitter-with-circle"></i></a></li>
 									<li><a href="#"><i class="icon-facebook-with-circle"></i></a></li>
@@ -165,15 +167,38 @@
 		}, 2000);
     },
 
+    $("form[type=ajax]").submit(function(){
+        form = $(this);
+        $.post(
+            'http://api.gospely.com/emails',
+            {
+            	email: email
+            },
+            function(data){
+                // if(data != 1){
+                //         alert("报错");
+                // }else{
+                //         // form.unbind('submit');
+                //         // form.submit();
+                //         return true;
+                // }
 
-    $('#notify-me').click(function() {
-
-    	var email = $('#email').val();
-
-	　　	$.post('http://api.gospely.com/emails', { email: email }, function (text, status) {
-			console.log(text, status);
-		});
+                console.log(data);
+                return false;
+            }
+        );
+        return false;
     });
+
+
+ //    $('#notify-me').click(function() {
+
+ //    	var email = $('#email').val();
+
+	// 　　	$.post('http://api.gospely.com/emails', { email: email }, function (text, status) {
+	// 		console.log(text, status);
+	// 	});
+ //    });
 
 </script>
 
