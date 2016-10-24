@@ -176,8 +176,8 @@
 			window.noty.splice(current, 1);
 			setTimeout(function() {
 				div.parentNode.removeChild(div);
-			}, 20000)
-		}, 20000);
+			}, 10000)
+		}, 10000);
     };
 
 	$(function(){
@@ -196,8 +196,6 @@
 	                if(code == -1){
 	                	_alert(data.message);
 	                }else{
-                        // form.unbind('submit');
-                        // form.submit();
                         return true;
 	                }
 
@@ -209,16 +207,6 @@
 	    });
 
 	});
-
-
- //    $('#notify-me').click(function() {
-
- //    	var email = $('#email').val();
-
-	// 　　	$.post('http://api.gospely.com/emails', { email: email }, function (text, status) {
-	// 		console.log(text, status);
-	// 	});
- //    });
 
 </script>
 
