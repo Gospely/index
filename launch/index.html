@@ -62,7 +62,7 @@
 									<div class="col-md-12 col-md-offset-0">
 										<div class="form-group">
 											<input type="text" class="form-control" id="email" placeholder="上线的时候通过邮件通知我">
-											<button type="submit" class="btn btn-primary">发送</button>
+											<button type="submit" id="notify-me" class="btn btn-primary">发送</button>
 										</div>
 									</div>
 								</form>
@@ -140,6 +140,18 @@
         day: d.getDate(),
         enableUtc: false
     });
+
+    // emails
+
+    $('#notify-me').click(function() {
+
+    	var email = $('#email').val();
+
+	　　	$.post('http://api.gospely.com/emails', { email: email }, function (text, status) {
+			console.log(text, status);
+		});
+    });
+
 </script>
 
 	</body>
