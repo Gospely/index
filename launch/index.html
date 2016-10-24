@@ -165,30 +165,34 @@
 				div.parentNode.removeChild(div);
 			}, 2000)
 		}, 2000);
-    },
+    }；
 
-    $("form[type=ajax]").submit(function(){
-    	var email = $('#email').val();
-        $.post(
-            'http://api.gospely.com/emails',
-            {
-            	email: email
-            },
-            function(data){
-                // if(data != 1){
-                //         alert("报错");
-                // }else{
-                //         // form.unbind('submit');
-                //         // form.submit();
-                //         return true;
-                // }
+	$(function(){
 
-                console.log(data);
-                return false;
-            }
-        );
-        return false;
-    });
+	    $("form[type=ajax]").submit(function(){
+	    	var email = $('#email').val();
+	        $.post(
+	            'http://api.gospely.com/emails',
+	            {
+	            	email: email
+	            },
+	            function(data){
+	                // if(data != 1){
+	                //         alert("报错");
+	                // }else{
+	                //         // form.unbind('submit');
+	                //         // form.submit();
+	                //         return true;
+	                // }
+
+	                console.log(data);
+	                return false;
+	            }
+	        );
+	        return false;
+	    });
+
+	});
 
 
  //    $('#notify-me').click(function() {
