@@ -525,8 +525,10 @@
 
 		var detail = getQueryString('detail');
 
-		console.log(detail);
-	
+		if(!detail) {
+			window.location.href = 'http://gospely.com/launch';
+		}
+
 	</script>
 	<!-- Smoothscroll -->
 	<script type="text/javascript" src="js/jquery.corner.js"></script> 
