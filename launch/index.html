@@ -168,7 +168,7 @@
     },
 
     $("form[type=ajax]").submit(function(){
-        form = $(this);
+    	var email = $('#email').val();
         $.post(
             'http://api.gospely.com/emails',
             {
