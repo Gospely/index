@@ -507,12 +507,25 @@
 	<!-- StikyMenu -->
 	<script src="js/stickUp.min.js"></script>
 	<script type="text/javascript">
-	  jQuery(function($) {
-		$(document).ready( function() {
-		  $('.navbar-default').stickUp();
-		  
+		jQuery(function($) {
+			$(document).ready( function() {
+			  $('.navbar-default').stickUp();
+			  
+			});
 		});
-	  });
+
+	  	function getQueryString(name) {
+    		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+		    var r = window.location.search.substr(1).match(reg);
+		    if (r != null) {
+		        return unescape(r[2]);
+		    }
+		    return null;
+		}
+
+		var detail = getQueryString('detail');
+
+		console.log(detail);
 	
 	</script>
 	<!-- Smoothscroll -->
