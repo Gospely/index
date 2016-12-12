@@ -1,545 +1,493 @@
- <!-- FlatFy Theme - Andrea Galanti /-->
-<!doctype html>
-<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
-<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
-<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
-<!--[if IE 9]>    <html class="no-js ie9" lang="en"> <![endif]-->
-<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
-    <meta name="description" content="gospel, 福音, 互联网时代的蒸汽机, 解放开发者生产力">
-    <meta name="author" content="龙猫科技">
 
-    <title>Gospel – 在线Web可视化集成开发环境</title>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Gospel - 在线Web可视化集成开发环境</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="在线Web可视化集成开发环境，解放开发者生产力" />
+	<meta name="keywords" content="Gospel, HTML5, IDE, 云计算, 容器云, JavaScript, Web IDE" />
+	<meta name="author" content="江西龙猫科技" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
- 
-    <!-- Custom Google Web Font -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <!-- <link href='http://fonts.useso.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'> -->
-	<!-- <link href='http://fonts.useso.com/css?family=Arvo:400,700' rel='stylesheet' type='text/css'> -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
 	
-    <!-- Custom CSS-->
-    <link href="css/general.css" rel="stylesheet">
-	
-	 <!-- Owl-Carousel -->
-    <link href="css/custom.css" rel="stylesheet">
-	<link href="css/owl.carousel.css" rel="stylesheet">
-    <link href="css/owl.theme.css" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
-	<link href="css/animate.css" rel="stylesheet">
-	
-	<!-- Magnific Popup core CSS file -->
-	<link rel="stylesheet" href="css/magnific-popup.css"> 
-	
-	<script src="js/modernizr-2.6.2.min.js"></script>  <!-- Modernizr /-->
-	<script src="js/PIE_IE9.js"></script>  
-	<script src="js/PIE_IE678.js"></script>  
-	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/simple-line-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=3fd9bd4ddb40b09517a532e482aaacad"></script>
 	<!--[if lt IE 9]>
-		<script src="js/html5shiv.js"></script>
+	<script src="js/respond.min.js"></script>
 	<![endif]-->
 
-</head>
-
-<body id="home">
-
-	<!-- Preloader -->
-	<div id="preloader">
-		<div id="status"></div>
-	</div>
-	
-	<!-- FullScreen -->
-    <div class="intro-header">
-		<div class="col-xs-12 text-center abcen1">
-			<h1 class="h1_home wow fadeIn" data-wow-delay="0.4s">Gospel</h1>
-			<h3 class="h3_home wow fadeIn" data-wow-delay="0.6s">加速开发 - 开发者福音</h3>
-			<ul class="list-inline intro-social-buttons">
-<!-- 				<li><a href="https://twitter.com/galantiandrea" class="btn  btn-lg mybutton_cyano wow fadeIn" data-wow-delay="0.8s"><span class="network-name">官方微博</span></a>
-				</li>
- -->				<li id="download" ><a href="#downloadlink" class="btn  btn-lg mybutton_standard wow swing wow fadeIn" data-wow-delay="1.2s"><span class="network-name"></span>立即使用</a>
-				</li>
-			</ul>
-		</div>    
-        <!-- /.container -->
-		<div class="col-xs-12 text-center abcen wow fadeIn">
-			<div class="button_down "> 
-				<a class="imgcircle wow bounceInUp" data-wow-duration="1.5s"  href="#whatis"> <img class="img_scroll" src="img/icon/circle.png" alt=""> </a>
-			</div>
-		</div>
-    </div>
-	
-	<!-- NavBar-->
-	<nav class="navbar-default" role="navigation">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#home">Gospel</a>
-			</div>
-
-			<div class="collapse navbar-collapse navbar-right navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					
-					<li class="menuItem"><a href="#whatis">这是什么？</a></li>
-					<li class="menuItem"><a href="#useit">覆盖领域</a></li>
-					<li class="menuItem"><a href="#screen">案例展示</a></li>
-					<li class="menuItem"><a href="#credits">拓展功能</a></li>
-					<li class="menuItem"><a href="#contact">联系我们</a></li>
-				</ul>
-			</div>
-		   
-		</div>
-	</nav> 
-	<!-- What is -->
-	<div id="whatis" class="content-section-b" style="border-top: 0">
-		<div class="container">
-
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>Gospel是个什么</h2>
-				<p class="lead" style="margin-top:0">在线Web可视化集成编程环境，互联网时代的蒸汽机</p>
-				
-			</div>
-			
-			<div class="row">
-			
-				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img class="rotate" src="img/icon/tweet.svg" alt="Generic placeholder image">
-				  <h3>拖拽 & 放置</h3>
-				  <p class="lead">页面布局既恶心又费时间？控件样式调整重复性代码太多？找HTML修修补补太烦？有了Gospel，再也不用担心这些。</p>
-
-				</div><!-- /.col-lg-4 -->
-				
-				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/picture.svg" alt="Generic placeholder image">
-				   <h3>所见即所得</h3>
-				   <p class="lead">我们提供所见即所得的开发环境，以及和Sublime Text同样体验的代码编辑器，大大缩短您的开发时间。</p>
-				</div><!-- /.col-lg-4 -->
-				
-				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/retina.svg" alt="Generic placeholder image">
-				   <h3>HTML5 & CSS3 & ES6</h3>
-					<p class="lead">我们所使用的技术栈紧跟Web开发潮流，HTML5、CSS3、ES6的所有特性，您都能使用。</p>
-				</div><!-- /.col-lg-4 -->
-				
-			</div><!-- /.row -->
-				
-			<div class="row tworow">
-			
-				<div class="col-sm-4  wow fadeInDown text-center">
-				  <img class="rotate" src="img/icon/laptop.svg" alt="Generic placeholder image">
-				  <h3>云服务</h3>
-				  <p class="lead">我们提供云调试，云部署，云编译功能，保证您的所有任务都可以在线上完成，包括NPM，Webpack等Node插件。</p>
-				 <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-				
-				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/map.svg" alt="Generic placeholder image">
-				   <h3>远程协同、版本控制</h3>
-				   <p class="lead">我们支持团队项目的创建，想象一下在线上使用Git或SVN的感觉？一定超乎您的意料。 </p>
-				   <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-				
-				<div class="col-sm-4 wow fadeInDown text-center">
-				  <img  class="rotate" src="img/icon/browser.svg" alt="Generic placeholder image">
-				   <h3>数据双向绑定</h3>
-				 <p class="lead">Angularjs、Reactjs、Vuejs，任何你想使用的前端框架，都可以嵌入开发环境。</p>
-				  <!-- <p><a class="btn btn-embossed btn-primary view" role="button">View Details</a></p> -->
-				</div><!-- /.col-lg-4 -->
-				
-			</div><!-- /.row -->
-		</div>
-	</div>
-	
-	<!-- Use it -->
-    <div id ="useit" class="content-section-a">
-
-        <div class="container">
-			
-            <div class="row">
-			
-				<div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/ipad.png" alt="">
-                </div>
-				
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">Web系统</h3>
-					<div class="sub-title lead3">开发您想要的任意企业管理系统、Web2.0或者包含数据可视化、WebGL的站点</div>
-                    <p class="lead">
-                    	ORM,ERP,SCM,CRM,HR，您还在为这些管理系统的复杂界面而发愁吗？数据可视化，WebGL代码编写极其复杂，想通过拖拽创造丰富的界面吗？Gospel帮您解决问题。
-					</p>
-
-<!-- 					 <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a> 
-					 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
- -->				</div>   
-            </div>
-        </div>
-        <!-- /.container -->
-    </div>
-
-    <div class="content-section-b"> 
-		
-		<div class="container">
-            <div class="row">
-                <div class="col-sm-6 wow fadeInLeftBig">
-                     <div id="owl-demo-1" class="owl-carousel">
-						<a href="img/iphone.png" class="image-link">
-							<div class="item">
-								<img  class="img-responsive img-rounded" src="img/iphone.png" alt="">
-							</div>
-						</a>
-						<a href="img/iphone.png" class="image-link">
-							<div class="item">
-								<img  class="img-responsive img-rounded" src="img/iphone.png" alt="">
-							</div>
-						</a>
-						<a href="img/iphone.png" class="image-link">
-							<div class="item">
-								<img  class="img-responsive img-rounded" src="img/iphone.png" alt="">
-							</div>
-						</a>
-					</div>       
-                </div>
-				
-                <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">移动Web应用</h3>
-					<div class="sub-title lead3">微信端，浏览器端，你还在一行一行代码的复制粘贴吗？</div>
-                    <p class="lead">
-						即便有ionic、framework7、weui、msui此类优秀的前端移动框架，但你还是免不了无止境的复制粘贴HTML，Gospel帮你自动生成，你只用关心具体的业务逻辑。
-					</p>
-				</div>  			
-			</div>
-        </div>
-    </div>
-
-    <div class="content-section-a">
-
-        <div class="container">
-
-             <div class="row">
-			 
-				<div class="col-sm-6 pull-right wow fadeInRightBig">
-                    <img class="img-responsive " src="img/doge.png" alt="">
-                </div>
-			 
-                <div class="col-sm-6 wow fadeInLeftBig"  data-animation-delay="200">   
-                    <h3 class="section-heading">移动Hybird（混合）应用</h3>
-                    <p class="lead">JavaScript帮助原生应用开发者省了不少力气，还让热更新成为可能，但是，Gospel能帮你更进一步
-					</p>
-					
-					<ul class="descp lead2">
-						<li><i class="glyphicon glyphicon-signal"></i> 可靠安全的平台</li>
-						<li><i class="glyphicon glyphicon-refresh"></i> 所有的设计都为未来而生</li>
-						<li><i class="glyphicon glyphicon-headphones"></i> 大系统也不在话下</li>
+	</head>
+	<body>
+	<header role="banner" id="fh5co-header">
+		<div class="fluid-container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header">
+					<!-- Mobile Toggle Menu Button -->
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"><i></i></a>
+					<a class="navbar-brand" href="index.html"><span>G</span>ospel</a> 
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#" data-nav-section="home"><span>主页</span></a></li>
+						<li><a href="#" data-nav-section="explore"><span>产品</span></a></li>
+						<li><a href="#" data-nav-section="testimony"><span>评价</span></a></li>
+						<li><a href="#" data-nav-section="pricing"><span>价格</span></a></li>
+						<li><a href="#" data-nav-section="team"><span>团队</span></a></li>
+						<li><a href="#" data-nav-section="faq"><span>FAQ</span></a></li>
+						<li class="call-to-action"><a href="#"><span>免费注册</span></a></li>
 					</ul>
-				</div>           
-            </div>
-        </div>
+				</div>
+			</nav>
+	  </div>
+	</header>
 
-    </div>
+	<section id="fh5co-home" data-section="home" style="background-image: url(images/bg.jpg);" data-stellar-background-ratio="0.5">
+		<div class="gradient"></div>
+		<div class="container">
+			<div class="text-wrap">
+				<div class="text-inner">
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2">
+							<h1 class="to-animate">为解放开发者生产力而生</h1>
+							<h2 class="to-animate">Gospel 你的福音，你的在线Web IDE</h2>
+							<div class="call-to-action">
+								<a href="#" class="demo to-animate">查看演示</a>
+								<a href="#" class="download to-animate">免费注册</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	<!-- Screenshot -->
-	<div id="screen" class="content-section-b">
-        <div class="container">
-          <div class="row" >
-			 <div class="col-md-6 col-md-offset-3 text-center wrap_title ">
-				<h2>案例展示</h2>
-				<p class="lead" style="margin-top:0">互联网时代的蒸汽机</p>
-			 </div>
-		  </div>
-		    <div class="row wow bounceInUp" >
-              <div id="owl-demo" class="owl-carousel">
-				
-				<a href="img/slide/1.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/1.png" alt="Owl Image">
-					</div>
-				</a>
-				
-               <a href="img/slide/2.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/2.png" alt="Owl Image">
-					</div>
-				</a>
-				
-				<a href="img/slide/3.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/3.png" alt="Owl Image">
-					</div>
-				</a>
-				
-				<a href="img/slide/1.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/1.png" alt="Owl Image">
-					</div>
-				</a>
-				
-               <a href="img/slide/2.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/2.png" alt="Owl Image">
-					</div>
-				</a>
-				
-				<a href="img/slide/3.png" class="image-link">
-					<div class="item">
-						<img  class="img-responsive img-rounded" src="img/slide/3.png" alt="Owl Image">
-					</div>
-				</a>
-              </div>       
-          </div>
-        </div>
-
-
-	</div>
-	
-	<div class="content-section-c">
+	<section id="fh5co-explore" data-section="explore">
 		<div class="container">
 			<div class="row">
-			<div class="col-md-6 col-md-offset-3 text-center white">
-				<h2>别错过我们的消息</h2>
-				<p class="lead" style="margin-top:0">Gospel，开发者福音，互联网时代的蒸汽机</p>
-			 </div>
-			<div class="col-md-6 col-md-offset-3 text-center">
-				<div class="mockup-content">
-						<div class="morph-button wow pulse morph-button-inflow morph-button-inflow-1">
-							<button type="button "><span>订阅我们的消息</span></button>
-							<div class="morph-content">
-								<div>
-									<div class="content-style-form content-style-form-4 ">
-										<h2 class="morph-clone">留下邮箱，获得即时通知</h2>
-										<form>
-											<p><label>您的邮箱地址</label><input type="text"/></p>
-											<p><button>订阅</button></p>
-										</form>
-									</div>
+				<div class="col-md-12 section-heading text-center">
+					<h2 class="to-animate">探索我们的产品</h2>
+					<div class="row">
+						<div class="col-md-8 col-md-offset-2 subtext to-animate">
+							<h3>全新的生产力工具</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="fh5co-explore">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-push-5 to-animate-2">
+						<img class="img-responsive" src="images/work_ide.png" alt="work">
+					</div>
+					<div class="col-md-4 col-md-pull-8 to-animate-2">
+						<div class="mt">
+							<h3>Web 可视化集成开发环境</h3>
+							<p>减轻产品经理、设计师、程序员之间的沟通成本；统一混乱的开发框架；简便开发环境的搭建；将软件开发从农业时代带向工业时代的利器。</p>
+							<ul class="list-nav">
+								<li><i class="icon-check2"></i>可视化（小程序）界面编辑器</li>
+								<li><i class="icon-check2"></i>在线文件管理器</li>
+								<li><i class="icon-check2"></i>在线远程终端</li>
+								<li><i class="icon-check2"></i>在线调试</li>
+								<li><i class="icon-check2"></i>在线代码编辑器</li>
+								<li><i class="icon-check2"></i>在线代码版本控制</li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="fh5co-explore fh5co-explore-bg-color">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 col-md-pull-1 to-animate-3">
+						<img class="img-responsive" src="images/work_caas.png" alt="work">
+					</div>
+					<div class="col-md-4 to-animate-3">
+						<div class="mt">
+							<div>
+								<h4><i class="icon-people"></i>基于Docker的容器云部署服务</h4>
+								<p>自定义内存、CPU及存储空间；完善的容器云管理（CPU、内存、网络I/O）；自定义一二级域名；一键构建部署。</p>
+							</div>
+							<div>
+								<h4><i class="icon-video2"></i>官方和Gospel镜像服务</h4>
+								<p>支持PHP、Python、Node.js及相应框架；支持Wordpress、discuz、phpwind等系统的一键部署。</p>
+							</div>
+							<div>
+								<h4><i class="icon-shield"></i>安全的运行环境</h4>
+								<p>你的服务运行在经过改装的安全Docker内核。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="fh5co-testimony" data-section="testimony">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 to-animate">
+					<div class="wrap-testimony">
+						<div class="owl-carousel-fullwidth">
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="http://www.yunduancn.com/Upload/Web/image/20151118/20151118115355_7410.png" alt="user">
+									</figure>
+									<blockquote>
+										<p>"Gospel极大简化了开发流程，让我们的程序员更加专注业务，提高了公司的利润。"</p>
+									</blockquote>
+									<span>云端科技</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="images/zhuxin.png" alt="user">
+									</figure>
+									<blockquote>
+										<p>"Gospel小程序开发工具，让我们赶上了小程序的浪潮，使我们的产品也搭上了风口。"</p>
+									</blockquote>
+									<span>竹新科技</span>
+								</div>
+							</div>
+							<div class="item">
+								<div class="testimony-slide active text-center">
+									<figure>
+										<img src="images/ncu_logo.jpeg" alt="user">
+									</figure>
+									<blockquote>
+										<p>"Gospel的出现使学校机房内落后的开发工具焕然一新，激发了学生们的学习兴趣"</p>
+									</blockquote>
+									<span>南昌大学</span>
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
-			</div>	
-			</div>>
+			</div>
 		</div>
-	</div>	
-	
-	<!-- Credits -->
-	<div id="credits" class="content-section-a">
+	</section>
+
+	<div class="getting-started getting-started-1">
 		<div class="container">
 			<div class="row">
-			
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>拓展功能</h2>
-				<p class="lead" style="margin-top:0">互联网时代的蒸汽机</p>
-			 </div>
-			 
-				<div class="col-sm-6  block wow bounceIn">
-					<div class="row">
-						<div class="col-md-4 box-icon rotate"> 
-							<i class="fa fa-desktop fa-4x "> </i> 
-						</div>
-						<div class="col-md-8 box-ct">
-							<h3> 模块化开发 </h3>
-							<p>任意引入外部JS、CSS、图片、媒体资源，同时允许你发布模块，以供其它开发者使用，当然，您还可以选择收费还是免费</p>
-						</div>
-				  </div>
-			  </div>
-			  <div class="col-sm-6 block wow bounceIn">
-					<div class="row">
-					  <div class="col-md-4 box-icon rotate"> 
-						<i class="fa fa-picture-o fa-4x "> </i> 
-					  </div>
-					  <div class="col-md-8 box-ct">
-						<h3> 远程NPM </h3>
-						<p> NPM的任何命令，您都可以在我们提供的终端中使用</p> 
-					  </div>
+				<div class="col-md-6 to-animate">
+					<h3>立即体验</h3>
+					<p>全新的生产力工具，为解放开发者生产力而生</p>
+				</div>
+				<div class="col-md-6 to-animate-2">
+					<div class="call-to-action text-right">
+						<a href="#" class="sign-up">免费注册</a>
 					</div>
-			  </div>
-		  </div>
-		  
-		  <div class="row tworow">
-				<div class="col-sm-6  block wow bounceIn">
-					<div class="row">
-						<div class="col-md-4 box-icon rotate"> 
-							<i class="fa fa-magic fa-4x "> </i> 
-						</div>
-						<div class="col-md-8 box-ct">
-							<h3> 自定义组件开发 </h3>
-							<p> 不喜欢系统内置的组件？没关系，自己做完之后可以直接导入官方版本库，你还可以通过此途径获得收益 </p>
-						</div>
-				  </div>
-			  </div>
-			  <div class="col-sm-6 block wow bounceIn">
-					<div class="row">
-					  <div class="col-md-4 box-icon rotate"> 
-						<i class="fa fa-heart fa-4x "> </i> 
-					  </div>
-					  <div class="col-md-8 box-ct">
-						<h3> 让您更专注生活:-)</h3>
-						<p> 每天瞧着代码，不断按F5的你，该停下来看看风景了</p> 
-					  </div>
-					</div>
-			  </div>
-		  </div>
-		</div>
-	</div>
-	
-	<!-- Banner Doswnload -->
-	<div id="downloadlink" class="banner" style="background: url(img/intro/intro-bg.jpg) no-repeat center center;">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>立即使用</h2>
-				<p class="lead" style="margin-top:0">我们愿做瓦特，以颠覆现有结构</p>
-				<p><a class="btn btn-embossed btn-primary view" href="javascript:alert('我们正在努力实现它！')" role="button">立即使用</a></p> 
-			 </div>
+				</div>
 			</div>
 		</div>
 	</div>
 	
-	<!-- Contact -->
-	<div id="contact" class="content-section-a">
-		<div class="container">
-			<div class="row">
-			
-			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
-				<h2>联系我们</h2>
-				<p class="lead" style="margin-top:0">互联网时代的蒸汽机</p>
+	<section id="fh5co-pricing" data-section="pricing">
+		<div class="fh5co-pricing">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">Gospel 售价</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">全新的生产力工具 </h3>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="pricing" style="width: 100%">
+						<div class="col-md-3">
+							<div class="price-box to-animate-2">
+								<h2 class="pricing-plan">个人版</h2>
+								<div class="price"><sup class="currency">¥</sup>0<small>/月</small></div>
+								<p>10GB存储<br>1核CPU<br>1GB内存<br>Web IDE基础功能</p>
+								<a href="#" class="btn btn-select-plan btn-sm">选择</a>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="price-box to-animate-2">
+								<h2 class="pricing-plan">基础版</h2>
+								<div class="price"><sup class="currency">¥</sup>27<small>/月</small></div>
+								<p>个人版所有功能<br>源码下载<br>域名绑定<br>代码版本控制</p>
+								<a href="#" class="btn btn-select-plan btn-sm">选择</a>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="price-box to-animate-2 popular">
+								<h2 class="pricing-plan pricing-plan-offer">企业版 <span>热销版本</span></h2>
+								<div class="price"><sup class="currency">¥</sup>166<small>/月</small></div>
+								<p>线上多人协同<br>在线聊天<br>Docker镜像下载<br>项目源代码下载</p>
+								<a href="#" class="btn btn-select-plan btn-sm">选择</a>
+							</div>
+						</div>
+
+						<div class="col-md-3">
+							<div class="price-box to-animate-2">
+								<h2 class="pricing-plan">教育版</h2>
+								<div class="price"><sup class="currency">¥</sup>140<small>/月</small></div>
+								<p>界面共享<br> 远程管理<br> 师生互动<br> 作业提交<br></p>
+								<a href="#" class="btn btn-select-plan btn-sm">选择</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
 			</div>
-			
-			<form role="form" action="" method="post" >
-				<div class="col-md-6">
-					<div class="form-group">
-						<label for="InputName">你的姓名</label>
-						<div class="input-group">
-							<input type="text" class="form-control" name="InputName" id="InputName" placeholder="输入姓名" required>
-							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+		</div>
+	</section>
+
+	<section id="fh5co-team" data-section="team">
+		<div class="fh5co-team">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">关于我们</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">工程师文化，软件必将改造世界 </h3>
+							</div>
 						</div>
 					</div>
-					
-					<div class="form-group">
-						<label for="InputEmail">你的邮箱</label>
-						<div class="input-group">
-							<input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="输入邮箱" required  >
-							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
-						</div>
-					</div>
-					
-					<div class="form-group">
-						<label for="InputMessage">留言内容</label>
-						<div class="input-group">
-							<textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
-							<span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+				</div>
+				<div class="row">
+					<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="images/xieyang.jpg" alt="谢扬"></div>
+							<h3>谢扬</h3>
+							<span class="position">创始人, 全栈工程师</span>
+							<p>13岁学习编程，希望做出颠覆性产品的开发者。</p>
+							<ul class="social-media">
+								<li><a href="http://weibo.com/2354504421/" class="facebook"><i class="icon-weibo"></i></a></li>
+								<li><a href="http://ivydom.com" class="dribbble"><i class="icon-dribbble"></i></a></li>
+							</ul>
 						</div>
 					</div>
 
-					<input type="submit" name="submit" id="submit" value="提交" class="btn wow tada btn-embossed btn-primary pull-right">
+					<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="images/ltb.jpg" alt="Roger Garfield"></div>
+							<h3>廖天宝</h3>
+							<span class="position">合伙人, 市场运营</span>
+							<p>经历过两次辍学，两次高考，不放弃命运的人生博弈者。</p>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="images/psb.jpeg" alt="Roger Garfield"></div>
+							<h3>罗文辉</h3>
+							<span class="position">合伙人, 全栈工程师</span>
+							<p>曾就职于同花顺，对技术充满追求，不断在技术中颠覆自我。</p>
+						</div>
+					</div>
+
+					<div class="col-md-3">
+						<div class="team-box text-center to-animate-2">
+							<div class="user"><img class="img-reponsive" src="images/yw.png" alt="Roger Garfield"></div>
+							<h3>阳威</h3>
+							<span class="position">合伙人, 市场运营</span>
+							<p>大学期间积累了深厚的市场经验和管理经验，励志成为人生赢家。</p>
+						</div>
+					</div>
+
 				</div>
-			</form>
-			
-			<hr class="featurette-divider hidden-lg">
-				<div class="col-md-5 col-md-push-1 address">
-					<address>
-					<h3>联系地址</h3>
-					<p class="lead"><a href="#">江西省，南昌市<br>
-					红谷滩新区学府大道899号慧谷创意产业园B座二楼</a><br>
-					手机: 18000179176<br>
+			</div>
+		</div>
+	</section>
+
+	<section id="fh5co-faq" data-section="faq">
+		<div class="fh5co-faq">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">常见问题</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">在您开始使用之前，我们建议您先阅读以下问题</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="box-faq to-animate-2">
+							<h3>Gospel是什么？</h3>
+							<p>Gospel，中文意思是“福音”，我们希望带给开发者福音。Gospel是集开发、部署于一体，基于云计算的全新生产力平台。我们希望通过云计算及HTML5的能力，简化开发者在软件开发过程中遇到的各种问题，提高企业效率。</p>
+						</div>
+						<div class="box-faq to-animate-2">
+							<h3>Gospel容器云平台是什么？</h3>
+							<p>Gospel容器云平台用来部署你用Gospel IDE开发出来的程序，你可以选择不使用此平台。我们免费为每一名用户分配了10G的存储资源以及1GB内存、1核CPU的计算资源。</p>
+						</div>
+						<div class="box-faq to-animate-2">
+							<h3>Gospel可以导出代码吗？</h3>
+							<p>可以导出，但是个人版的有限制。</p>
+						</div>
+					</div>
+
+					<div class="col-md-6">
+						<div class="box-faq to-animate-2">
+							<h3>Gospel的IDE支持什么语言？</h3>
+							<p>目前，Gospel支持PHP、Pyhton、Node.js三门语言及其多种框架（Laravel、Django、Express等）。同时，我们还开放了微信小程序的在线开发功能，用户可以脱离微信自带的开发者工具。</p>
+						</div>
+						<div class="box-faq to-animate-2">
+							<h3>Gospel支持微信小程序的开发吗？</h3>
+							<p>Gospel支持微信小程序的开发，并且提供了可视化设计器。可以生成适用于公众号的HTML代码和适用于小程序的WXML代码。Gospel始终坚持Web的开放性原则，愿与用户共同坚守。</p>
+						</div>
+						<div class="box-faq to-animate-2">
+							<h3>Gospel是免费的吗？</h3>
+							<p>Gospel对个人用户是免费的，个人用户可以升级成专业版。收费版本针对企业用户和高校学生。对于企业用户我们提供了企业版，对于高校学生，我们提供了教育版。</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<hr>
+
+	<section id="fh5co-trusted" data-section="trusted">
+		<div class="fh5co-trusted">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 section-heading text-center">
+						<h2 class="to-animate">客户支持</h2>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2 subtext">
+								<h3 class="to-animate">我们得到了以下这些公司的支持</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					 <div class="col-md-2 col-sm-3 col-xs-6 col-sm-offset-0 col-md-offset-1">
+					 	<div class="partner-logo to-animate-2">
+					 		<img src="images/logo1.png" alt="Partners" class="img-responsive">
+					 	</div>
+					 </div>
+				    <div class="col-md-2 col-sm-3 col-xs-6">
+				    	<div class="partner-logo to-animate-2">
+				    		<img src="images/logo2.png" alt="Partners" class="img-responsive">
+						</div>
+				    </div>
+				    <div class="col-md-2 col-sm-3 col-xs-6">
+				    	<div class="partner-logo to-animate-2">
+				    		<img src="images/logo3.png" alt="Partners" class="img-responsive">
+				    	</div>
+				    </div>
+				    <div class="col-md-2 col-sm-3 col-xs-6">
+				    	<div class="partner-logo to-animate-2">
+				    		<img src="images/logo4.png" alt="Partners" class="img-responsive">
+				    	</div>
+				    </div>
+				    <div class="col-md-2 col-sm-12 col-xs-12">
+				    	<div class="partner-logo to-animate-2">
+				    		<img src="images/logo5.png" alt="Partners" class="img-responsive">
+				    	</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="getting-started getting-started-2">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 to-animate">
+					<h3>立即使用</h3>
+					<p>全新的生产力工具，为解放开发者生产力而生 </p>
+				</div>
+				<div class="col-md-6 to-animate-2">
+					<div class="call-to-action text-right">
+						<a href="#" class="sign-up">免费注册</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fh5co-footer" role="contentinfo">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 to-animate">
+					<h3 class="section-title">关于我们</h3>
+					<p>Gospel是江西龙猫科技有限公司旗下产品，创立于2016年6月6日，以解放开发者生产力为企业核心价值。</p>
+					<p class="copy-right">&copy; 2016 Gospel. <br>All Rights Reserved. <br>
 					</p>
-					</address>
+				</div>
 
-<!-- 					<h3>Social</h3>
-					<li class="social"> 
-					<a href="#"><i class="fa fa-facebook-square fa-size"> </i></a>
-					<a href="#"><i class="fa  fa-twitter-square fa-size"> </i> </a> 
-					<a href="#"><i class="fa fa-google-plus-square fa-size"> </i></a>
-					<a href="#"><i class="fa fa-flickr fa-size"> </i> </a>
-					</li>
- -->				</div>
+				<div class="col-md-4 to-animate">
+					<h3 class="section-title">联系方式</h3>
+					<ul class="contact-info">
+						<li><i class="icon-map-marker"></i>江西省南昌市红谷滩新区899号慧谷创意产业园B座二楼C区</li>
+						<li><i class="icon-phone"></i>+ 86 18000179176</li>
+						<li><i class="icon-envelope"></i><a href="mailto:info@dodora.cn">info@dodora.cn</a></li>
+						<li><i class="icon-globe2"></i><a href="http://www.dodora.cn">www.dodora.cn</a></li>
+					</ul>
+					<h3 class="section-title">社交平台</h3>
+					<ul class="social-media">
+						<li><a href="#" class="facebook"><i class="icon-weibo"></i></a></li>
+						<li><a href="#" class="twitter"><i class="icon-wechat"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 to-animate">
+					<h3 class="section-title">意见建议</h3>
+					<form class="contact-form">
+						<div class="form-group">
+							<label for="name" class="sr-only">姓名</label>
+							<input type="name" class="form-control" id="name" placeholder="姓名">
+						</div>
+						<div class="form-group">
+							<label for="email" class="sr-only">邮箱</label>
+							<input type="email" class="form-control" id="email" placeholder="邮箱">
+						</div>
+						<div class="form-group">
+							<label for="message" class="sr-only">内容</label>
+							<textarea class="form-control" id="message" rows="7" placeholder="内容"></textarea>
+						</div>
+						<div class="form-group">
+							<input type="submit" id="btn-submit" class="btn btn-send-message btn-md" value="提交">
+						</div>
+					</form>
+				</div>
 			</div>
 		</div>
 	</div>
+	<div id="map" class="fh5co-map"></div>
+
 	
-	
-	
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h3 class="footer-title">关注我们！</h3>
-            <p>想了解创始人信息?<br/>
-              这里有他的博客!
-              点击: <a  href="http://ivydom.com" target="_blank">ivydom</a>
-            </p>
-			
-			<!-- LICENSE -->
-			<a rel="cc:attributionURL" href="http://gospely.com"
-		   property="dc:title">Gospel </a> ,<a rel="license"
-		   href="http://gospely.com">由Gospel团队用爱付出而得 - <script src="http://s11.cnzz.com/stat.php?id=1259202867&web_id=1259202867" language="JavaScript"></script></a>.
-		   
-	   
-          </div> <!-- /col-xs-7 -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
 
-          <div class="col-md-5">
-            <div class="footer-banner">
-              <h3 class="footer-title">Gospel</h3>
-              <ul>
-                <li>江西龙猫科技有限公司</li>
-                <li>解放开发者生产力</li>
-                <li>提高全球软件技术结合互联网的应用</li>
-                <li>成为互联网信息时代的蒸汽机</li>
-                <li>我们的偶像是Google</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
-	<script src="js/owl.carousel.js"></script>
-	<script src="js/script.js"></script>
-	<!-- StikyMenu -->
-	<script src="js/stickUp.min.js"></script>
-	<script type="text/javascript">
-		jQuery(function($) {
-			$(document).ready( function() {
-			  $('.navbar-default').stickUp();
-			  
-			});
-		});
-
-	  	function getQueryString(name) {
-    		var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
-		    var r = window.location.search.substr(1).match(reg);
-		    if (r != null) {
-		        return unescape(r[2]);
-		    }
-		    return null;
-		}
-
-		var detail = getQueryString('detail');
-
-		if(!detail) {
-			window.location.href = 'http://gospely.com/launch';
-		}
-
-	</script>
-	<!-- Smoothscroll -->
-	<script type="text/javascript" src="js/jquery.corner.js"></script> 
-	<script src="js/wow.min.js"></script>
-	<script>
-	 new WOW().init();
-	</script>
-	<script src="js/classie.js"></script>
-	<script src="js/uiMorphingButton_inflow.js"></script>
-	<!-- Magnific Popup core JS file -->
-	<script src="js/jquery.magnific-popup.js"></script> 
-</body>
-
+	</body>
 </html>
+
