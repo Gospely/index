@@ -699,6 +699,7 @@
 
 	    	if(message == '') {
 	    		_alert('麻烦写下您的意见哦');
+	    		return false;
 	    	}
 
 	        $.post(
