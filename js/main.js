@@ -729,12 +729,18 @@
 
 	    });
 
-	    $('#message, #name, #email').keydown(function(e) {
+	    $('#message').keydown(function(e) {
 
 	    	if (e.ctrlKey && e.keyCode == 13) {
 	    		$('#btn-submit').click();
   			}
 
+	    });
+
+	    $('#name, #email').keydown(function(e) {
+			if (e.keyCode == 13) {
+	    		$('#btn-submit').click();
+  			}
 	    });
 		
 	});
