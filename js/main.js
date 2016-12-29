@@ -656,6 +656,73 @@
 	    }
 
 	    openInfo();
+
+	    var _alert = function(msg, type) {
+			window.noty = window.noty || [];
+
+			var current = window.noty.length - 1;
+
+	    	type = type || 'success';
+			var timestamp = Date.parse(new Date());
+			var body = document.body;
+			var div = document.createElement("div");
+			div.className = "notification noty animated bounceIn is-" + type;
+			div.id = 'noty-' + timestamp;
+			div.innerHTML = msg;
+			window.noty.push(div);
+			body.appendChild(div);
+
+			setTimeout(function() {
+				div.className = "notification noty animated bounceOut is-" + type;
+				window.noty.splice(current, 1);
+				setTimeout(function() {
+					div.parentNode.removeChild(div);
+				}, 2000)
+			}, 2000);
+	    };
+
+		function isEmail(str){
+			var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+			return reg.test(str);
+		}
+
+	    $('#btn-submit').click(function() {
+	    	var name = $('#name'),
+	    		email = $('#email'),
+	    		message = $('#message');
+
+
+	    	if(!isEmail(email)) {
+	    		_alert('您的邮箱格式不正确');
+	    		return false;
+	    	}
+
+	    	if(message == '') {
+	    		_alert('麻烦写下您的意见哦');	    		
+	    	}
+
+	        $.post(
+	            'http://api.gospely.com/feedbacks',
+	           	{
+	            	email: email,
+	            	creator: name,
+	            	message: message
+	            },
+
+	            function(data){
+
+	            	var code = data.code
+
+	                if(code == 1){
+	                	_alert('谢谢参与！Gospel期待与您相遇！');
+	                }
+	                return false;
+	            }
+	        );
+
+	        return false;
+
+	    });
 		
 	});
 
