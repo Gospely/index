@@ -687,9 +687,9 @@
 		}
 
 	    $('#btn-submit').click(function() {
-	    	var name = $('#name'),
-	    		email = $('#email'),
-	    		message = $('#message');
+	    	var name = $('#name').val(),
+	    		email = $('#email').val(),
+	    		message = $('#message').val();
 
 
 	    	if(!isEmail(email)) {
@@ -698,11 +698,11 @@
 	    	}
 
 	    	if(message == '') {
-	    		_alert('麻烦写下您的意见哦');	    		
+	    		_alert('麻烦写下您的意见哦');
 	    	}
 
 	        $.post(
-	            'http://api.gospely.com/feedbacks',
+	        	'http://api.gospely.com/feedbacks',
 	           	{
 	            	email: email,
 	            	creator: name,
