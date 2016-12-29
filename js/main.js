@@ -716,12 +716,24 @@
 
 	                if(code == 1){
 	                	_alert('谢谢参与！Gospel期待与您相遇！');
+		                $('#name').val('');
+		                $('#email').val('');
+		                $('#message').val('');
 	                }
+
 	                return false;
 	            }
 	        );
 
 	        return false;
+
+	    });
+
+	    $('#message, #name, #email').keydown(function(e) {
+
+	    	if (e.ctrlKey && e.keyCode == 13) {
+	    		$('#btn-submit').click();
+  			}
 
 	    });
 		
