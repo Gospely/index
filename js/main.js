@@ -2,8 +2,6 @@
 	
 	'use strict';
 
-
-
 	// iPad and iPod detection	
 	var isiPad = function(){
 		return (navigator.platform.indexOf("iPad") != -1);
@@ -21,8 +19,6 @@
 		$(window).stellar();
 	};
 
-
-
 	// Burger Menu
 	var burgerMenu = function() {
 
@@ -35,13 +31,10 @@
 			} else {
 				$(this).addClass('active');	
 			}
-
-			
 			
 		});
 
 	};
-
 
 	var testimonialCarousel = function(){
 		var owl = $('.owl-carousel-fullwidth');
@@ -76,10 +69,13 @@
 		    	$('.js-fh5co-nav-toggle').removeClass('active');
 		    }
 
+		   	if($(this).attr('href') != '#') {
+		   		window.location.href = $(this).attr('href');
+		   	}
+
 		    event.preventDefault();
 		    return false;
 		});
-
 
 	};
 
@@ -685,6 +681,11 @@
 			var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
 			return reg.test(str);
 		}
+
+		$('#lookup-demo, .pricing a').click(function(e) {
+    		_alert('即将开放');
+    		e.preventDefault();
+		});
 
 	    $('#btn-submit').click(function() {
 	    	var name = $('#name').val(),
