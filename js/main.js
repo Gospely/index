@@ -682,7 +682,7 @@
 			return reg.test(str);
 		}
 
-		$('#lookup-demo, .pricing a').click(function(e) {
+		$('.pricing a').click(function(e) {
     		_alert('即将开放');
     		e.preventDefault();
 		});
