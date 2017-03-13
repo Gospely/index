@@ -11,6 +11,11 @@
 *	Edit this section
 *
 * ======================================================= */
+
+html {
+  font-family: "PingFang SC","Helvetica Neue","Hiragino Sans GB","Segoe UI","Microsoft YaHei","微软雅黑",sans-serif;
+}
+
 body {
   font-family: "PT Sans", Arial, serif;
   font-weight: 300;
