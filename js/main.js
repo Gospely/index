@@ -344,5 +344,11 @@
 
 	});
 
+	$(function() {
+		$('#notice').modal({
+			show: true
+		});
+	})
+
 
 }());
